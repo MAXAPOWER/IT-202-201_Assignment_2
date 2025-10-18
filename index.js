@@ -18,3 +18,12 @@ function testPalindrome() {
 
 testPalindrome();
 
+function calculateTip() {
+  var subtotal = prompt("Please enter the subtotal of the bill: $");
+  var percentTip = prompt("Please enter the percentage of tip you would like to give: $");
+  var calculatedTip = subtotal * (percentTip / 100);
+  var grandTotal = subtotal + calculatedTip;
+  alert("With a subtotal of $" + subtotal + " and your desired tip percentage of " + percentTip + "%, your calculated tip is $" + calculatedTip + " with a grand total of $" + grandTotal);
+};
+
+calculateTip();

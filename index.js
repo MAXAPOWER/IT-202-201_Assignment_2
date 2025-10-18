@@ -20,10 +20,12 @@ testPalindrome();
 
 function calculateTip() {
   var subtotal = prompt("Please enter the subtotal of the bill: $");
-  var percentTip = prompt("Please enter the percentage of tip you would like to give: $");
-  var calculatedTip = subtotal * (percentTip / 100);
-  var grandTotal = subtotal + calculatedTip;
-  alert("With a subtotal of $" + subtotal + " and your desired tip percentage of " + percentTip + "%, your calculated tip is $" + calculatedTip + " with a grand total of $" + grandTotal);
+  var subtotalFloat = parseFloat(subtotal);
+  var percentTip = prompt("Please enter the percentage of tip you would like to give: ");
+  var percentTipFloat = parseFloat(percentTip);
+  var calculatedTip = subtotalFloat * (percentTipFloat / 100);
+  var grandTotal = subtotalFloat + calculatedTip;
+  alert("With a subtotal of $" + subtotalFloat + " and your desired tip percentage of " + percentTipFloat + "%, your calculated tip is $" + calculatedTip + " with a grand total of $" + grandTotal);
 };
 
 calculateTip();

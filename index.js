@@ -12,8 +12,10 @@ function testPalindrome() {
   var testUserInput = userInput.split("").reverse().join("");
   if (userInput === testUserInput && userInput.length === 3) {
     alert("Your number, " + userInput + ", is a palindrome!");
+    document.getElementById("testPalindrome");
   } else {
     alert("Your number, " + userInput + ", is not a palindrome.");
+    document.getElementById("testPalindrome");
   };
 };
 
@@ -27,6 +29,7 @@ function calculateTip() {
   var calculatedTip = subtotalFloat * (percentTipFloat / 100);
   var grandTotal = subtotalFloat + calculatedTip;
   alert("With a subtotal of $" + subtotalFloat + " and your desired tip percentage of " + percentTipFloat + "%, your calculated tip is $" + calculatedTip + " with a grand total of $" + grandTotal);
+  document.getElementById("calculateTip");
 };
 
 calculateTip();
